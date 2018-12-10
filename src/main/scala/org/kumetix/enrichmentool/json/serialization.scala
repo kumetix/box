@@ -4,6 +4,6 @@ import spray.json._
 import DefaultJsonProtocol._
 
 object serialization {
-  implicit val data = jsonFormat4(Data.apply)
+  implicit val data = jsonFormat3(Data.apply)
   implicit val userAgentData = jsonFormat1(UserAgentData.apply)
 }
