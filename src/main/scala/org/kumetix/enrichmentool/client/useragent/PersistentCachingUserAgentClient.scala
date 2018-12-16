@@ -4,8 +4,8 @@ import java.net.URLEncoder
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
-import akka.http.scaladsl.model.{HttpRequest, HttpResponse}
-import akka.http.scaladsl.unmarshalling.{FromResponseUnmarshaller, PredefinedFromEntityUnmarshallers, Unmarshal, Unmarshaller}
+import akka.http.scaladsl.model.HttpRequest
+import akka.http.scaladsl.unmarshalling.PredefinedFromEntityUnmarshallers
 import akka.stream._
 import akka.util.ByteString
 import com.redis.RedisClient
@@ -14,8 +14,8 @@ import com.typesafe.scalalogging.Logger
 import org.kumetix.enrichmentool.Implicits._
 import spray.json.{JsonFormat, _}
 
+import scala.concurrent.Future
 import scala.concurrent.duration._
-import scala.concurrent.{ExecutionContext, Future}
 
 object PersistentCachingUserAgentClient
 

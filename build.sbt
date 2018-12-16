@@ -1,4 +1,4 @@
-name := "enrichmentool"
+name := "box"
 
 version := "1.0"
 
@@ -11,3 +11,8 @@ libraryDependencies += "net.debasishg"     %% "redisclient" % "3.8"
 libraryDependencies += "io.spray"          %% "spray-json" % "1.3.5"
 libraryDependencies += "ch.qos.logback"    %  "logback-classic" % "1.2.3"
 libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.0"
+
+// html parsing - parse.html
+libraryDependencies += "org.jsoup"         % "jsoup" % "1.8.3"
+
+javacOptions ++= Seq("-source")
